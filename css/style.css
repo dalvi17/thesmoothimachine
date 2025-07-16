@@ -1,0 +1,86 @@
+h1 {
+  font-weight: bold;
+  color: #d4af37;
+  text-shadow: 1px 1px #e8e8e8;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+form > div {
+  flex: 1 1 48%;
+}
+
+.full-width {
+  flex: 1 1 100%;
+}
+
+.form-control,
+.form-select {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.ingredients-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ingredients-wrapper .form-check {
+  width: 30%;
+  margin: 0;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #d4af37;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #b4952d;
+}
+
+#Summary {
+  background: linear-gradient(to right, #8BC6EC, #9599E2);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#Summary h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#Summary p,
+#Summary li {
+  color: #fff;
+}
+
