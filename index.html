@@ -7,8 +7,80 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/> 
 </head>
 <body>
-    
+  <div class="container my-5">
+    <h1 class="text-center mb-4"> DD's Smoothie Machine</h1>
+
+    <form id="smoothieForm" class="p-4 border rounded shadow-sm bg-light">
+      <div class="mb-3">
+        <input type="text" class="form-control" id="fname" placeholder="Enter first name" required>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" class="form-control" id="lname" placeholder="Enter last name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="size" class="form-label">Choose a Size</label>
+        <select id="size" class="form-select" required>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Choose a Base</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="base" value="Milk" id="baseMilk" checked>
+          <label class="form-check-label" for="baseMilk">Milk</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="base" value="Almond Milk" id="baseAlmond">
+          <label class="form-check-label" for="baseAlmond">Almond Milk</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="base" value="Yogurt" id="baseYogurt">
+          <label class="form-check-label" for="baseYogurt">Yogurt</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Choose Ingredients</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Strawberry" id="Strawberry">
+          <label class="form-check-label" for="Strawberry">Strawberry</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Banana" id="Banana">
+          <label class="form-check-label" for="Banana">Banana</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Mango" id="Mango">
+          <label class="form-check-label" for="Mango">Mango</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Blueberry" id="Blueberry">
+          <label class="form-check-label" for="Blueberry">Blueberry</label>
+        </div>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="lemon" id="lemon">
+          <label class="form-check-label" for="lemon">lemon</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Avocado" id="Avocado">
+          <label class="form-check-label" for="Avocado">Avocado</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Place Order</button>
+    </form>
+
+    <div id="orderSummary" class="mt-5 p-4 bg-success text-white rounded d-none"></div>
+  </div>
+
+  <script  src="js/main.js"></script>
 </body>
 </html>
